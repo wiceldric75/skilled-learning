@@ -1,0 +1,567 @@
+:root {
+  /* Spacing variables */
+  --spacing-1800: 144px;
+  --spacing-1600: 128px;
+  --spacing-1000: 80px;
+  --spacing-800: 64px;
+  --spacing-700: 56px;
+  --spacing-600: 48px;
+  --spacing-550: 44px;
+  --spacing-500: 40px;
+  --spacing-400: 32px;
+  --spacing-300: 24px;
+  --spacing-250: 20px;
+  --spacing-200: 16px;
+  --spacing-150: 12px;
+  --spacing-100: 8px;
+  --spacing-mobile-width: 375px;
+  --spacing-tablet-width: 768px;
+  --spacing-desktop-width: 1440px;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  place-content: center;
+  position: relative;
+}
+
+header {
+  width: var(--spacing-mobile-width);
+  padding: var(--spacing-200) var(--spacing-250);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-logo {
+  width: 79.3px;
+  height: 20px;
+}
+.header-button {
+  display: flex;
+  padding: var(--spacing-200, 16px) var(--font-size-desktop-text-preset-3, 32px);
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-100, 8px);
+  border-radius: 28px;
+  background: var(--color-blue-900, #13183f);
+  color: var(--color-white, #fff);
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* desktop/text-preset-7 */
+  font-family: "Plus Jakarta Sans";
+  font-size: var(--font-size-desktop-text-preset-7, 18px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 27px */
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+.header-button:hover {
+  background: var(--color-blue-600, #666ca3);
+}
+main {
+  width: var(--spacing-mobile-width);
+}
+.overflow-container {
+  overflow: hidden;
+}
+.hero-section {
+  padding: var(--spacing-800) var(--spacing-250);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-600);
+  align-items: center;
+}
+.hero-section-top {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-500);
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-300);
+}
+
+h1 {
+  color: var(--color-blue-900, #13183f);
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* tablet-mobile/text-preset-1 */
+  font-family: "Plus Jakarta Sans";
+  font-size: var(--font-size-tablet-mobile-text-preset-1, 40px);
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%; /* 48px */
+}
+
+.hero-content p {
+  color: var(--color-grey, #83869a);
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* desktop/text-preset-5 */
+  font-family: "Plus Jakarta Sans";
+  font-size: var(--font-size-desktop-text-preset-5, 18px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 27px */
+  align-self: stretch;
+}
+
+.get-started-button {
+  width: 172px;
+  height: 59px;
+  border-radius: 28px;
+  background: var(
+    --gradient-preset-1,
+    linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%)
+  );
+  display: flex;
+  padding: var(--spacing-200, 16px) var(--font-size-desktop-text-preset-3, 32px);
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-100, 8px);
+  color: var(--color-white, #fff);
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* desktop/text-preset-7 */
+  font-family: "Plus Jakarta Sans";
+  font-size: var(--font-size-desktop-text-preset-7, 18px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 27px */
+  border: none;
+  cursor: pointer;
+}
+.get-started-button:hover {
+  border-radius: 28px;
+  background: var(
+    --gradient-preset-1-light,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0.5) 100%
+    ),
+    linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%)
+  );
+}
+picture {
+  position: relative;
+  width: 100%; /* Match the parent container's width */
+  height: 100%; /* Match the parent container's height */
+}
+.hero-section-bottom {
+  width: 435px;
+  height: 409px;
+}
+picture img {
+  width: 100%; /* Fill the width of the container */
+  height: 100%; /* Fill the height of the container */
+  object-fit: cover; /* Ensure the image scales to fit */
+  display: block; /* Avoid extra spacing caused by inline elements */
+}
+.section-main-contnet {
+  overflow: visible; /* Allow the shadow to render outside */
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-400);
+  padding: var(--spacing-800) var(--spacing-250) var(--spacing-1000)
+    var(--spacing-250);
+}
+.inner-red-card {
+  padding: var(--spacing-400, 32px);
+  border-radius: 15px;
+  background: var(
+    --gradient-preset-1,
+    linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%)
+  );
+}
+.red-card h2 {
+  color: var(--color-white, #fff);
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* tablet-mobile/text-preset-3 */
+  font-family: "Plus Jakarta Sans";
+  font-size: var(--font-size-tablet-mobile-text-preset-3, 24px);
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%; /* 28.8px */
+}
+
+.card {
+  padding-top: 28px;
+}
+.innercard {
+  padding: var(--spacing-800) var(--spacing-400) var(--spacing-500)
+    var(--spacing-400);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-300);
+  border-radius: 15px;
+  background: var(--color-white, #fff);
+
+  border-radius: 15px;
+  background: var(--color-white, #fff);
+
+  /* card-shadow */
+  box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
+
+  position: relative;
+}
+.card-image {
+  top: -28px;
+  position: absolute;
+  width: 56px;
+  height: 56px;
+}
+
+.card h2 {
+  height: var(--spacing-300, 24px);
+  align-self: stretch;
+  color: var(--color-blue-900, #13183f);
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* tablet-mobile/text-preset-4 */
+  font-family: "Plus Jakarta Sans";
+  font-size: var(--font-size-tablet-mobile-text-preset-4, 20px);
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%; /* 24px */
+}
+.card p {
+  color: var(--color-grey, #83869a);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 24px */
+}
+
+.card button {
+  display: flex;
+  width: 104px;
+  height: 28px;
+  padding-bottom: 1px;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-pink-600, #f74780);
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* desktop/text-preset-7 */
+  font-family: "Plus Jakarta Sans";
+  font-size: var(--font-size-desktop-text-preset-7, 18px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 27px */
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.card button:hover {
+  color: #ffa7c3;
+}
+footer {
+  width: var(--spacing-mobile-width);
+  padding: var(--spacing-300) var(--spacing-250);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--color-blue-900, #13183f);
+}
+footer img {
+  width: 79.3px;
+  height: 20px;
+}
+footer button {
+  display: flex;
+  height: var(--spacing-600, 48px);
+  padding: var(--spacing-150, 12px) var(--font-size-desktop-text-preset-4, 24px);
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-100, 8px);
+  border-radius: 28px;
+  background: var(
+    --gradient-preset-2,
+    linear-gradient(180deg, #4851ff 0%, #f02aa6 100%)
+  );
+  color: var(--color-white, #fff);
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* desktop/text-preset-7 */
+  font-family: "Plus Jakarta Sans";
+  font-size: var(--font-size-desktop-text-preset-7, 18px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 27px */
+  border: none;
+}
+footer button:hover {
+  border-radius: 28px;
+  background: var(
+    --gradient-preset-2-light,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0.5) 100%
+    ),
+    linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%)
+  );
+  cursor: pointer;
+}
+/*TABLED CODE STARTS HERE*/
+@media (min-width: 600px) and (max-width: 1024px) {
+  header {
+    width: var(--spacing-tablet-width);
+    padding: var(--spacing-300) var(--spacing-550);
+  }
+  .header-button {
+    height: var(--spacing-600, 48px);
+    padding: var(--spacing-150, 12px)
+      var(--font-size-desktop-text-preset-4, 24px);
+  }
+  main {
+    width: var(--spacing-tablet-width);
+  }
+  .hero-section {
+    padding: var(--spacing-800) var(--spacing-550);
+    flex-direction: row;
+    gap: var(--spacing-300);
+  }
+
+  .hero-section-bottom {
+    width: 328px;
+    height: 400px;
+  }
+  .hero-content {
+    width: 326px;
+  }
+
+  picture {
+    position: relative;
+  }
+  picture img {
+    width: 695px;
+    height: 723px;
+    top: -240px;
+    left: -24.71px;
+    display: block;
+    position: absolute;
+  }
+
+  .red-card {
+    padding-top: 28px;
+  }
+  .inner-red-card {
+    display: flex;
+    padding: var(--spacing-800, 64px) var(--spacing-400, 32px)
+      var(--spacing-500, 40px) var(--spacing-400, 32px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-100, 8px);
+    flex: 1 0 0;
+    align-self: stretch;
+  }
+  .card p {
+    font-size: 18px;
+  }
+  .section-main-contnet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns, equally spaced */
+    column-gap: var(--spacing-300); /* Column gap */
+    row-gap: var(--spacing-400); /* Row gap */
+    align-items: stretch; /* Ensure all cards stretch to equal height */
+    padding: var(--spacing-800) var(--spacing-550) var(--spacing-1800)
+      var(--spacing-550);
+  }
+  .red-card,
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Ensure the card stretches */
+  }
+  .inner-red-card {
+    flex: 1; /* Fill the remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .innercard {
+    height: 100%;
+  }
+  .red-card {
+    height: 100%;
+  }
+  .card {
+    height: 100%;
+  }
+  footer {
+    width: var(--spacing-tablet-width);
+    display: flex;
+    padding: var(--spacing-300, 24px) var(--spacing-550, 44px);
+    align-items: center;
+    gap: var(--spacing-1600, 128px);
+    align-self: stretch;
+    background: var(--color-blue-900, #13183f);
+  }
+}
+@media (min-width: 1025px) {
+  .overflow-container {
+    overflow: hidden;
+  }
+  header {
+    width: var(--spacing-desktop-width);
+    padding: var(--spacing-300) var(--spacing-1000);
+  }
+  .header-logo {
+    width: 111px;
+    height: 28px;
+  }
+  .header-button {
+    height: var(--spacing-600, 48px);
+    padding: var(--spacing-150, 12px)
+      var(--font-size-desktop-text-preset-4, 24px);
+    cursor: pointer;
+  }
+  main {
+    width: var(--spacing-desktop-width);
+  }
+  .hero-section {
+    padding: var(--spacing-800) var(--spacing-1000);
+    flex-direction: row;
+    gap: var(--spacing-400);
+  }
+
+  .hero-section-bottom {
+    width: 544px;
+    height: 560px;
+  }
+  .hero-content {
+    width: 544px;
+  }
+  h1 {
+    font-size: 56px;
+  }
+  picture {
+    position: relative;
+  }
+  picture img {
+    width: 1046px;
+    height: 938px;
+    top: -312px;
+    left: 135.71px;
+    display: block;
+    position: absolute;
+  }
+  .hero-content p {
+    width: 457px;
+  }
+
+  .red-card h2 {
+    font-size: 32px;
+  }
+  .card h2 {
+    font-size: 24px;
+  }
+  .red-card {
+    padding-top: 28px;
+  }
+  .inner-red-card {
+    display: flex;
+    padding: var(--spacing-800, 64px) var(--spacing-400, 32px)
+      var(--spacing-500, 40px) var(--spacing-400, 32px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-100, 8px);
+    flex: 1 0 0;
+    align-self: stretch;
+  }
+  .card p {
+    font-size: 18px;
+  }
+  .section-main-contnet {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Two columns, equally spaced */
+    column-gap: var(--spacing-400); /* Column gap */
+    row-gap: var(--spacing-700); /* Row gap */
+    align-items: stretch; /* Ensure all cards stretch to equal height */
+    padding: var(--spacing-800) 160px var(--spacing-1800) 160px;
+  }
+  .red-card,
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Ensure the card stretches */
+  }
+  .inner-red-card {
+    flex: 1; /* Fill the remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .innercard {
+    height: 100%;
+  }
+  .red-card {
+    height: 100%;
+  }
+  .card {
+    height: 100%;
+  }
+  footer {
+    width: var(--spacing-desktop-width);
+    display: flex;
+    padding: var(--spacing-300, 24px) var(--spacing-1000, 80px);
+    align-items: center;
+    gap: var(--spacing-1600, 128px);
+    align-self: stretch;
+    background: var(--color-blue-900, #13183f);
+  }
+  footer img {
+    width: 111px;
+    height: 28px;
+  }
+  footer button {
+    display: flex;
+    padding: var(--spacing-200, 16px)
+      var(--font-size-desktop-text-preset-3, 32px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-100, 8px);
+
+    height: 59px;
+
+    border-radius: 28px;
+    background: var(
+      --gradient-preset-2,
+      linear-gradient(180deg, #4851ff 0%, #f02aa6 100%)
+    );
+    color: var(--color-white, #fff);
+    font-feature-settings: "liga" off, "clig" off;
+
+    /* desktop/text-preset-7 */
+    font-family: "Plus Jakarta Sans";
+    font-size: var(--font-size-desktop-text-preset-7, 18px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 27px */
+    border: none;
+  }
+}
